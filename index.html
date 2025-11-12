@@ -3,26 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Song Lyric Generator</title>
   </head>
   <body>
     <div class="container">
-      <h1>Hello! Input your favourite song name</h1>
-      <form>
-        <input
-          type="text"
-          class="song-input"
-          placeholder="Type a song name..."
-          autocomplete="off"
-        />
+      <header>
+        <h1>Hello! Input your favourite song name</h1>
+      </header>
+      <main>
+        <form id="lyric-form">
+          <input
+            type="text"
+            class="song-input"
+            placeholder="Type a song name..."
+            autocomplete="off"
+          />
 
-        <button type="submit" class="submit">Generate Lyrics</button>
-      </form>
-      <div>
-        <h2>Generated Lyrics:</h2>
-        <p>I want all things good Music!!</p>
-      </div>
+          <button type="submit" class="submit">Generate Lyrics</button>
+        </form>
+        <div>
+          <h2>Generated Lyrics:</h2>
+          <p class="lyric-output" id="lyric-output"></p>
+        </div>
+      </main>
 
       <footer>
         This AI project was coded by
