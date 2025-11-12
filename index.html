@@ -8,6 +8,20 @@
   </head>
   <body>
     <h1>Hello! Input your favourite song name</h1>
+    <form>
+      <input
+        type="text"
+        id="song-input"
+        placeholder="Type a song name..."
+        autocomplete="off"
+      />
+
+      <button type="submit">Generate Lyrics</button>
+    </form>
+    <div id="lyrics-output">
+      <h2>Generated Lyrics:</h2>
+      <p id="lyrics-text"></p>
+    </div>
 
     <footer>
       This AI project was coded by
