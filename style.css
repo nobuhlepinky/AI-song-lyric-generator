@@ -1,3 +1,51 @@
 body {
-  background: paleturquoise;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 30px 50px;
+  margin-top: 40px;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+.song-input {
+  font-size: 15px;
+  padding: 10px 15px;
+  width: 50%;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.submit {
+  font-size: 15px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  color: radial-gradient(
+    circle at 10% 20%,
+    rgb(242, 235, 243) 0%,
+    rgb(234, 241, 249) 90.1%
+  );
+}
+
+.submit:hover {
+  background: white;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  border: 1px;
+  padding: 20px;
+  width: 70%;
+  margin: 20px auto;
 }

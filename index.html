@@ -7,38 +7,40 @@
     <title>Song Lyric Generator</title>
   </head>
   <body>
-    <h1>Hello! Input your favourite song name</h1>
-    <form>
-      <input
-        type="text"
-        id="song-input"
-        placeholder="Type a song name..."
-        autocomplete="off"
-      />
+    <div class="container">
+      <h1>Hello! Input your favourite song name</h1>
+      <form>
+        <input
+          type="text"
+          class="song-input"
+          placeholder="Type a song name..."
+          autocomplete="off"
+        />
 
-      <button type="submit">Generate Lyrics</button>
-    </form>
-    <div id="lyrics-output">
-      <h2>Generated Lyrics:</h2>
-      <p id="lyrics-text"></p>
+        <button type="submit" class="submit">Generate Lyrics</button>
+      </form>
+      <div>
+        <h2>Generated Lyrics:</h2>
+        <p>I want all things good Music!!</p>
+      </div>
+
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/nobuhlepinky" target="_blank"
+          >Nobuhle Pinky Nsibanyoni</a
+        >
+        and is
+        <a
+          href="https://github.com/nobuhlepinky/AI-song-lyric-generator"
+          target="_blank"
+          >open-sourced on Github</a
+        >
+        and
+        <a href="https://ai-song-lyric-generator.onrender.com" target="_blank"
+          >hosted on Render</a
+        >
+      </footer>
     </div>
-
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/nobuhlepinky" target="_blank"
-        >Nobuhle Pinky Nsibanyoni</a
-      >
-      and is
-      <a
-        href="https://github.com/nobuhlepinky/AI-song-lyric-generator"
-        target="_blank"
-        >open-sourced on Github</a
-      >
-      and
-      <a href="https://ai-song-lyric-generator.onrender.com" target="_blank"
-        >hosted on Render</a
-      >
-    </footer>
 
     <script src="script.js"></script>
   </body>
