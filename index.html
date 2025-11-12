@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Song Lyric Generator</title>
   </head>
@@ -19,6 +20,8 @@
             class="song-input"
             placeholder="Type a song name..."
             autocomplete="off"
+            id="lyrics-input"
+            class="lyrics-input"
           />
 
           <button type="submit" class="submit">Generate Lyrics</button>
