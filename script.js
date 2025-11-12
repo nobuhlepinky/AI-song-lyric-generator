@@ -1,5 +1,8 @@
 function showLyrics(response) {
   console.log("lyrics generated");
+  let lyricsOutputElement = document.querySelector("#lyric-output");
+  lyricsOutputElement.classList.remove("blinking");
+  lyricsOutputElement.innerHTML = "";
   new Typewriter("#lyric-output", {
     strings: response.data.answer,
     autoStart: true,
@@ -17,6 +20,12 @@ function generateLyrics(event) {
   let context =
     "You are a world class songwriter. Write creative and engaging song lyrics. Make sure they rhyme. Format the lyrics in verses and choruses. Use line breaks and line spaces to separate the lines of the verses and choruses.  Do not include any additional text or explanations. The lines should be suitable for singing and less than 10 lines.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let lyricsOutputElement = document.querySelector("#lyric-output");
+  let generatedElement = document.querySelector("#generated");
+  generatedElement.style.display = "block";
+  lyricsOutputElement.innerHTML = `Generating lyrics about ${lyricsInputElement.value}...`;
+  lyricsOutputElement.classList.add("blinking");
 
   console.log("generating lyrics");
   console.log(`prompt: ${prompt}`);

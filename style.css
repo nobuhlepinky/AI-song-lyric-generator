@@ -49,3 +49,20 @@ p {
   width: 70%;
   margin: 20px auto;
 }
+
+.generated {
+  display: none;
+}
+
+@keyframes blink {
+  0%, 49% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0.3;
+  }
+}
+
+.blinking {
+  animation: blink 1s infinite;
+}
