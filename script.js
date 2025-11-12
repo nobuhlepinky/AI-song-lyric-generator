@@ -1,5 +1,4 @@
 function showLyrics(response) {
-  console.log("lyrics generated");
   let lyricsOutputElement = document.querySelector("#lyric-output");
   lyricsOutputElement.classList.remove("blinking");
   lyricsOutputElement.innerHTML = "";
@@ -26,10 +25,6 @@ function generateLyrics(event) {
   generatedElement.style.display = "block";
   lyricsOutputElement.innerHTML = `Generating lyrics about ${lyricsInputElement.value}...`;
   lyricsOutputElement.classList.add("blinking");
-
-  console.log("generating lyrics");
-  console.log(`prompt: ${prompt}`);
-  console.log(`context: ${context}`);
 
   axios.get(apiUrl).then(showLyrics);
 }
